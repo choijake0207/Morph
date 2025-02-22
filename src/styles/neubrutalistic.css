@@ -1,0 +1,10 @@
+.neubrutalistic {
+    background: black;
+    border: 2px solid white;
+    box-shadow: 10px 10px 0px white;
+}
+.light .neubrutalistic {
+    background: white;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0px black;
+}
