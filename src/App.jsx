@@ -1,7 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import "./App.css"
 import Neumorphic from './Components/Neumorphic'
+import Skeumorphic from './Components/Skeumorphic'
 import {Moon, Sun, GithubLogo} from "phosphor-react"
+import Glassmorphic from './Components/Glassmorphic'
+import Neubrutalistic from './Components/Neubrutalistic'
+import Flat from './Components/Flat'
+import Holographic from './Components/Holographic'
 
 export default function App() {
   const [theme, setTheme] = useState("dark")
@@ -47,27 +52,37 @@ export default function App() {
 
         <section className="style_section" id="skeumorphic">
           <p className="section_title">Skeumorphic</p>
-          <div className="style_card_container"></div>
+          <div className="style_card_container">
+            <Skeumorphic/>
+          </div>
         </section>
 
         <section className="style_section" id="glassmorphic">
           <p className="section_title">Glassmorphic</p>
-          <div className="style_card_container"></div>
+          <div className="style_card_container">
+            <Glassmorphic/>
+          </div>
         </section>
 
         <section className="style_section" id="neobrutal">
           <p className="section_title">Neobrutalistic</p>
-          <div className="style_card_container"></div>
+          <div className="style_card_container">
+            <Neubrutalistic/>
+          </div>
         </section>
 
         <section className="style_section" id="flat">
           <p className="section_title">Flat</p>
-          <div className="style_card_container"></div>
+          <div className="style_card_container">
+            <Flat/>
+          </div>
         </section>
 
         <section className="style_section" id="holographic">
           <p className="section_title">Holographic</p>
-          <div className="style_card_container"></div>
+          <div className="style_card_container">
+            <Holographic/>
+          </div>
         </section>
 
       </main>
