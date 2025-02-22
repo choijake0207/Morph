@@ -2,5 +2,8 @@
     background: linear-gradient(90deg, rgba(24, 24, 25, 0.694), rgb(21, 21, 22));
     border-radius: 5px;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.287);
-   
+}
+.light .skeumorphic {
+    background: linear-gradient(90deg, rgb(205, 210, 222), rgb(197, 202, 214));
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.287), -1px -1px 3px rgb(221, 227, 240);
 }

@@ -1,0 +1,89 @@
+.glassmorphic_wrap {
+    position: relative;
+    border-radius: 25px;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.196);
+}
+.light .glassmorphic_wrap {
+    border: 1px solid rgb(255, 254, 254);
+}
+.glass_blobs {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+}
+.glass_blobs > * {
+    border-radius: 50%;
+    background: #1d9fe0;
+}
+.one {
+    height: 100px;
+    width: 100px;
+    animation: blobOne 10s forwards linear infinite;
+}
+.two {
+    height: 150px;
+    width: 150px;
+    margin-left: 40%;
+    animation: blobTwo 10s forwards linear infinite;
+    background: rgb(255, 128, 0);
+}
+.three {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    animation: blobOne 10s forwards linear infinite;
+}
+
+.glassmorphic {
+    background: rgba(51, 51, 55, 0.5);
+    backdrop-filter: blur(30px);
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 25px;
+}
+.light .glassmorphic {
+    background: rgba(181, 185, 194, 0.254);
+    backdrop-filter: blur(20px);
+}
+
+
+
+@keyframes blobOne {
+    0% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateY(20%)
+    }
+    70% {
+        transform: translateX(20%)
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+@keyframes blobTwo {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(20%)
+    }
+    50% {
+        transform: translateY(20%)
+    }
+    75% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translate(0)
+    }
+}
