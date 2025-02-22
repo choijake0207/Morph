@@ -1,0 +1,10 @@
+.neumorphic {
+    background: rgb(19, 19, 20);
+    box-shadow: 5px 5px 20px rgb(10, 10, 11), -1px -1px 12px rgb(38, 38, 42);
+    border-radius: 25px;
+}
+.light .neumorphic {
+    background: rgb(208, 213, 225);
+    box-shadow: 5px 5px 20px rgb(179, 183, 193), -1px -1px 12px rgb(244, 247, 255);
+    border-radius: 25px;
+}
